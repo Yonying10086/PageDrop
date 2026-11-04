@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light only" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self';
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data: https://avatars.githubusercontent.com;
+               connect-src 'self' https://api.github.com;
+               frame-ancestors 'none';
+               base-uri 'self';
+               form-action 'self';"
+    />
+    <title>PageDrop — 一键把网页放到 GitHub Pages</title>
+    <meta name="description" content="填一串密钥，选个网页，几秒后拿到网址。纯静态，不上传任何数据到第三方服务器。" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
